@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/burgershop"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter your name ...."
+            android:id="@+id/nama"
+            android:inputType="text"
+            android:drawablePadding="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Topping"
+            android:textSize="28sp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Cheese"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textColor="#212121"/>
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+"
+                    android:onClick="incrementcheese"
+                    />
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="1"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/jumlahkeju"
+                    android:textSize="20sp"/>
+                <Button
+                    android:layout_width="48dp"
+                    android:onClick="decrementcheese"
+                    android:text="-"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="= Rp."
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5000"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/hargakeju"
+                    android:textSize="22sp"/>
+
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Egg"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textColor="#212121"/>
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+"
+                    android:onClick="incrementegg"
+                    />
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/jumlahtelor"
+                    android:textSize="20sp"/>
+                <Button
+                    android:layout_width="48dp"
+                    android:onClick="decrementegg"
+                    android:text="-"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="= Rp."
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="6000"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/hargatelor"
+                    android:textSize="22sp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Salada"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textColor="#212121"/>
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+"
+                    android:onClick="incrementsalada"
+                    />
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/jumlahsalada"
+                    android:textSize="20sp"/>
+                <Button
+                    android:layout_width="48dp"
+                    android:onClick="decrementsalada"
+                    android:text="-"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="= Rp."
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="3000"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/hargasalada"
+                    android:textSize="22sp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Meat"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textColor="#212121"/>
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+"
+                    android:onClick="incrementmeat"
+                    />
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/jumlahbeef"
+                    android:textSize="20sp"/>
+                <Button
+                    android:layout_width="48dp"
+                    android:onClick="decrementmeat"
+                    android:text="-"
+                    android:layout_height="48dp" />
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="= Rp."
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:textColor="#212121"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="8000"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/hargabeef"
+                    android:textSize="22sp"/>
+            </TableRow>
+
+        </TableLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Pembayaran"
+                    android:textSize="20sp"
+                    android:textColor="#212121"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="= Rp."
+                    android:layout_marginStart="15dp"
+                    android:textSize="20sp"
+                    android:textColor="#212121"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp"
+                    android:textColor="#212121"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ket"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#212121"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/order"
+            android:layout_height="wrap_content"
+            android:text="Confirm Order"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
